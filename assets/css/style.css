@@ -1,3 +1,9 @@
+:root {
+    --sidebar-width: 80px;
+    --footer-height: 90px;
+    --header-height: 90px
+}
+
 /* CSS RESET */
 
 * {
@@ -105,4 +111,34 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+/* Main */
+
+main {
+    display: flex;
+}
+
+.sidebar {
+    height: calc(100vh - var(--footer-height));
+    width: var(--sidebar-width);
+    background-color: #000000;
+}
+
+.main-content {
+    width: calc(100% - var(--sidebar-width));
+}
+
+header {
+    height: var(--header-height);
+}
+
+.content {
+    height: calc(100vh - var(--footer-height) - var(--header-height));
+}
+
+/* Footer */
+
+footer {
+    height: var(--footer-height);
 }
