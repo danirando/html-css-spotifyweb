@@ -137,6 +137,47 @@ header {
     height: calc(100vh - var(--footer-height) - var(--header-height));
 }
 
+/* Sidebar */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sidebar>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-icons {
+    width: var(--sidebar-width);
+    height: calc(100vh - var(--footer-height));
+
+}
+
+.sidebar img {
+    width: 50%;
+}
+
+.sidebar .img-big {
+    width: 55%;
+}
+
+.sidebar .img-small {
+    width: 30%;
+    padding: 0;
+}
+
+.sidebar .profile {
+    background-color: #808080;
+    border-radius: 50%;
+}
+
 /* Footer */
 
 footer {
