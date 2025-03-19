@@ -269,6 +269,22 @@ header {
     z-index: 10;
 }
 
+.contenitore .piuascolti {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.container-card {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.container-card * {
+    flex-shrink: 0;
+
+}
+
 
 
 /* Footer */
