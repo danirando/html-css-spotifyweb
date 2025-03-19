@@ -103,6 +103,10 @@ body {
     width: 10%;
 }
 
+.inline {
+    display: inline-block;
+}
+
 /* LAYOUT */
 
 .wrapper {
@@ -292,6 +296,48 @@ header {
 footer {
     background-color: #282828;
     height: var(--footer-height);
+    display: flex;
+    padding: 5px 10px;
 }
+
+.footer-left {
+    width: calc(100% / 4);
+    display: flex;
+    gap: 10px;
+}
+
+.footer-left img {
+    width: 35px
+}
+
+.footer-left h3 {
+    font-size: small;
+}
+
+.footer-left p {
+    font-weight: 800;
+    font-size: small;
+    color: #848484;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.icons-footer * {
+    color: #848484;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.footer-center {
+    width: calc(50%);
+}
+
+.footer-right {
+    width: calc(100% / 4);
+}
+
 
 /* responsive xs */
