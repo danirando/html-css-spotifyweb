@@ -683,4 +683,11 @@ footer {
 
         width: 357px;
     }
+
+    .icons-footer {
+        display: flex;
+        gap: 10px;
+        margin-left: 10px;
+    }
+
 }
