@@ -151,7 +151,7 @@ header {
     padding-bottom: 20px;
 }
 
-.sidebar>div {
+.sidebar>div.contenitore {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,6 +183,14 @@ header {
 
 .sidebar .logobig {
     width: 65%;
+}
+
+.sidebar p {
+    display: none;
+}
+
+div.contenitore-playlist h3 {
+    display: none;
 }
 
 /* Header */
@@ -525,9 +533,106 @@ footer {
 
     }
 
-    .sidebar div {
+    .sidebar>div {
         align-items: flex-start;
-        padding-left: 20px;
     }
 
+    .links-sidebar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-left: 2px solid #B9FF35;
+        padding-left: 8px;
+    }
+
+    p.home {
+        color: white;
+    }
+
+    .sidebar div.contenitore>div.links>img {
+        margin-left: 10px;
+    }
+
+    div.links {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    div.links:hover p,
+    img {
+        color: white;
+        cursor: pointer;
+    }
+
+    .sidebar p {
+        display: inline-block;
+    }
+
+    .sidebar>div.contenitore {
+        align-items: flex-start;
+    }
+
+    .contenitore.pad {
+        margin-left: 10px;
+    }
+
+
+    div.download {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid gray;
+        margin-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    div.download p {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+    div.user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    div.user p {
+        color: white;
+        font-weight: 700;
+    }
+
+    div.contenitore-playlist {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    div.contenitore-playlist h3 {
+        display: block;
+        color: white;
+        font-size: 1rem;
+    }
+
+    div.contenitore-playlist i {
+        background-color: gray;
+        color: black;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    div.contenitore-playlist li {
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 }
