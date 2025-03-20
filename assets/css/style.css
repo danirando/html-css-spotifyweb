@@ -522,6 +522,7 @@ footer {
 @media screen and (min-width: 0px) {
     .sidebar .logobig {
         display: none;
+        padding-left: 10px;
     }
 }
 
