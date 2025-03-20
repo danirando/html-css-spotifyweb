@@ -165,14 +165,17 @@ header {
 }
 
 .sidebar img {
+    cursor: pointer;
     width: 2rem;
 }
 
 .sidebar .img-big {
+    cursor: pointer;
     width: 2.5rem;
 }
 
 .sidebar .img-small {
+    cursor: pointer;
     padding: 0;
 }
 
