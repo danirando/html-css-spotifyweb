@@ -213,6 +213,7 @@ header .upgrade {
 }
 
 header .upgrade:hover {
+    cursor: pointer;
     font-size: 1rem;
 }
 
@@ -318,10 +319,12 @@ header {
 }
 
 .card:hover img {
+    cursor: pointer;
     filter: grayscale(80%);
 }
 
 .card:hover .playhover {
+    cursor: pointer;
     display: block;
     z-index: 10;
 }
@@ -376,10 +379,12 @@ footer {
 }
 
 .footer-left:hover p {
+    cursor: pointer;
     text-decoration: underline;
 }
 
 .footer-left i:hover {
+    cursor: pointer;
     color: white;
 }
 
@@ -402,12 +407,13 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 .footer-center-icons {
 
     display: flex;
-    justify-content: space-around;
+    gap: 30px;
     align-items: center;
 }
 
@@ -417,17 +423,18 @@ footer {
 
 .fa-circle-play:hover {
     font-size: 2.3rem;
+    cursor: pointer;
 }
 
 .footer-center-time {
     display: flex;
-    justify-content: space-around;
+    gap: 20px;
     align-items: center;
 }
 
 .time-line {
     height: 2px;
-    width: 200px;
+    width: 100px;
     border: 2px solid #5A5A5A;
     border-radius: 2rem;
     position: relative;
@@ -455,10 +462,12 @@ footer {
 }
 
 .footer-center-time:hover .time-line-white {
+    cursor: pointer;
     border-color: #B9FF35
 }
 
 .footer-center-time:hover .pallino {
+    cursor: pointer;
     display: block;
 }
 
@@ -471,7 +480,8 @@ footer {
 .footer-right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 10px;
     color: white;
 }
 
@@ -484,6 +494,7 @@ footer {
 }
 
 .time-line.volume {
+    width: 100px;
     display: inline-block;
 }
 
@@ -492,6 +503,7 @@ footer {
 }
 
 .time-line.volume:hover .pallino.volume {
+    cursor: pointer;
     display: block;
 }
 
@@ -501,6 +513,7 @@ footer {
 }
 
 .time-line.volume:hover .time-line-white.volume {
+    cursor: pointer;
     border-color: #B9FF35;
 }
 
@@ -588,6 +601,11 @@ footer {
         padding-bottom: 10px;
     }
 
+    div.download:hover p {
+        color: white;
+        cursor: pointer;
+    }
+
     div.download p {
         font-size: .8rem;
         font-weight: 600;
@@ -634,5 +652,33 @@ footer {
         display: flex;
         align-items: center;
         gap: 10px;
+    }
+
+    div.contenitore-playlist li:hover {
+        cursor: pointer;
+        color: white;
+
+    }
+
+    div.contenitore-playlist li:hover i {
+        background-color: white;
+    }
+
+    .time-line {
+        width: 200px;
+
+    }
+}
+
+/* responsive M */
+
+@media screen and (min-width: 768px) {
+    .footer-center-icons {
+        padding: 0 100px;
+    }
+
+    .time-line {
+
+        width: 357px;
     }
 }
