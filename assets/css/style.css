@@ -165,21 +165,24 @@ header {
 }
 
 .sidebar img {
-    width: 50%;
+    width: 2rem;
 }
 
 .sidebar .img-big {
-    width: 55%;
+    width: 2.5rem;
 }
 
 .sidebar .img-small {
-    width: 30%;
     padding: 0;
 }
 
 .sidebar .profile {
     background-color: #808080;
     border-radius: 50%;
+}
+
+.sidebar .logobig {
+    width: 65%;
 }
 
 /* Header */
@@ -199,6 +202,10 @@ header .upgrade {
     border: 1px solid white;
     font-weight: 600;
     font-size: .8rem;
+}
+
+header .upgrade:hover {
+    font-size: 1rem;
 }
 
 /* content */
@@ -289,6 +296,41 @@ header {
 
 }
 
+.card {
+    position: relative;
+}
+
+.playhover {
+    position: absolute;
+    color: white;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.card:hover img {
+    filter: grayscale(80%);
+}
+
+.card:hover .playhover {
+    display: block;
+    z-index: 10;
+}
+
+.playhover.stranger {
+    top: 29%;
+}
+
+.playhover.cure {
+    top: 35%;
+}
+
+.playhover.radardaily {
+    top: 99px;
+}
+
+
 
 
 /* Footer */
@@ -325,6 +367,14 @@ footer {
     align-items: center;
 }
 
+.footer-left:hover p {
+    text-decoration: underline;
+}
+
+.footer-left i:hover {
+    color: white;
+}
+
 .icons-footer * {
     color: #848484;
     display: block;
@@ -357,6 +407,10 @@ footer {
     font-size: 30px;
 }
 
+.fa-circle-play:hover {
+    font-size: 2.3rem;
+}
+
 .footer-center-time {
     display: flex;
     justify-content: space-around;
@@ -386,7 +440,7 @@ footer {
     width: 15px;
     height: 15px;
     top: -8px;
-    left: 41px;
+    left: 37px;
     background-color: white;
     border-radius: 50%;
     display: none;
@@ -406,4 +460,74 @@ footer {
     padding: 5px 10px;
 }
 
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-right * {
+    padding-right: 5px;
+}
+
+.footer-right i {
+    font-size: small;
+}
+
+.time-line.volume {
+    display: inline-block;
+}
+
+.time-line-white.volume {
+    width: 20px;
+}
+
+.time-line.volume:hover .pallino.volume {
+    display: block;
+}
+
+.pallino.volume {
+    top: -7px;
+    left: 12px;
+}
+
+.time-line.volume:hover .time-line-white.volume {
+    border-color: #B9FF35;
+}
+
 /* responsive xs */
+
+@media screen and (min-width: 0px) {
+    .sidebar .logobig {
+        display: none;
+    }
+}
+
+/* responsive s */
+
+@media screen and (min-width: 576px) {
+    .sidebar * {
+        color: #747474;
+    }
+
+    .sidebar .logosmall {
+        display: none;
+    }
+
+    .sidebar .logobig {
+
+        display: block;
+    }
+
+    .sidebar {
+        --sidebar-width: 230x;
+
+    }
+
+    .sidebar div {
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+}
