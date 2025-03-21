@@ -653,7 +653,7 @@ footer {
     div.contenitore-playlist li {
         font-size: 0.9rem;
         font-weight: 700;
-        padding: 10px;
+        padding-bottom: 20px;
         display: flex;
         align-items: center;
         gap: 10px;
