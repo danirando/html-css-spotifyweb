@@ -436,29 +436,27 @@ footer {
 }
 
 .time-line {
-    height: 2px;
+    height: 4px;
     width: 100px;
-    border: 2px solid #5A5A5A;
+    background-color: gray;
     border-radius: 2rem;
     position: relative;
 }
 
 .time-line-white {
-    height: 2px;
+    height: 100%;
     width: 50px;
-    border: 2px solid white;
+    background-color: white;
     border-radius: 2rem;
-    position: absolute;
-    top: -2px;
-    left: -2px;
 }
 
 .pallino {
     position: absolute;
     width: 15px;
     height: 15px;
-    top: -8px;
-    left: 37px;
+    top: 50%;
+    left: 50px;
+    transform: translateX(-50%) translateY(-50%);
     background-color: white;
     border-radius: 50%;
     display: none;
@@ -466,7 +464,7 @@ footer {
 
 .footer-center-time:hover .time-line-white {
     cursor: pointer;
-    border-color: #B9FF35
+    background-color: #B9FF35;
 }
 
 .footer-center-time:hover .pallino {
@@ -511,13 +509,18 @@ footer {
 }
 
 .pallino.volume {
-    top: -7px;
-    left: 12px;
+    top: 50%;
+    left: 20px;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .time-line.volume:hover .time-line-white.volume {
     cursor: pointer;
-    border-color: #B9FF35;
+    background-color: #B9FF35;
+}
+
+.footer-center-time:hover {
+    cursor: pointer;
 }
 
 /* responsive xs */
