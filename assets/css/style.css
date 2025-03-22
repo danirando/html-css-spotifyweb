@@ -196,6 +196,14 @@ div.contenitore-playlist h3 {
     display: none;
 }
 
+div .user:hover {
+    cursor: pointer;
+}
+
+div .links-sidebar:hover {
+    cursor: pointer;
+}
+
 /* Header */
 
 header {
@@ -420,6 +428,10 @@ footer {
     align-items: center;
 }
 
+.footer-center-icons i {
+    cursor: pointer;
+}
+
 .fa-circle-play {
     font-size: 30px;
 }
@@ -484,6 +496,10 @@ footer {
     justify-content: flex-end;
     gap: 10px;
     color: white;
+}
+
+.footer-right i:hover {
+    cursor: pointer;
 }
 
 .footer-right * {
